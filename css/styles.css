@@ -73,6 +73,7 @@ button {
 }
 
 
+  
 
 .logo {
     font-family: 'Raleway', sans-serif;
@@ -130,11 +131,15 @@ button {
         display: flex;
         align-items: center;
     }
-         .header-flex .address {
-             font-style: normal;
-             flex-direction: column;
-             gap: 12px;
-         }
+  .header-flex address.address {
+      display: block;
+  }
+
+  .header-flex .contact-list {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+  }
     .links {
         display: flex;
         align-items: center;
@@ -225,6 +230,15 @@ button {
       flex-direction: column;
       gap: 12px;
   }
+    .header-flex address.address {
+            display: block;
+        }
+    
+    .header-flex .contact-list {
+            display: flex;
+            gap: 12px;
+            flex-direction: row;
+        }
     .address {
         padding: 24px 0;
         font-size: 16px;
