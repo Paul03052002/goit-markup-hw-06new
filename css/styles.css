@@ -307,7 +307,9 @@ button {
 .menu-list {
     flex-direction: column;
 }
-
+.menu-list:first-child{
+    color: #404BBF;
+}
 .menu-list-second {
     display: flex;
 
@@ -330,9 +332,7 @@ button {
     color: #2E2F42;
     font-size: 36px;
 }
-.menu-first-link:first-child{
-    color: #404BBF;
-}
+
 .admenu:first-child{
  color: #4D5AE5;
 }
