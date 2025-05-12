@@ -72,10 +72,7 @@ button {
     justify-content: space-between;
 }
 
-.links,
-.address {
-    display: none;
-}
+
 
 .logo {
     font-family: 'Raleway', sans-serif;
