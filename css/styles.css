@@ -294,7 +294,10 @@ button {
     font-weight: 700;
 
 }
-
+.links,
+.header-flex>.address {
+    display: none;
+}
 .menu-punkt:hover,
 .menu-punkt:focus {
     color: #404bbf;
