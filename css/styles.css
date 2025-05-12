@@ -1,4 +1,5 @@
 
+
 a {
     text-decoration: none;
 }
@@ -288,4 +289,28 @@ button {
 }
 .men-svg {
     fill: var(--cloud);
+}
+.menu-addr {
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-punkt {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
+.contact-punkt:first-child {
+    margin-bottom: 24px;
+}
+
+.contact-punkt:hover,
+.contact-punkt:focus {
+    color: #404bbf;
 }
