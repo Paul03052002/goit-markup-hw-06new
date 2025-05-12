@@ -307,8 +307,13 @@ button {
 .menu-list {
     flex-direction: column;
 }
-.stud{
+.menu-list .menu-punkt:first-child .menu-first-link {
     color: #404BBF;
+}
+
+
+.menu-contact .contact-punkt:first-child .address {
+    color: #434455;
 }
 .menu-list-second {
     display: flex;
