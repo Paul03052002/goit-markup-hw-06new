@@ -269,6 +269,13 @@ button {
         display: none;
     }
 }
+@media screen and (max-width: 767.98px) {
+
+    .header-flex .links,
+    .header-flex .address {
+        display: none;
+    }
+}
 .menu-list {
     flex-direction: column;
 }
