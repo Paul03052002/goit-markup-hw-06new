@@ -322,7 +322,11 @@ button {
     margin-left: auto;
     margin-right: auto;
 }
-
+.menu-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 .contact-punkt {
     font-family: "Roboto", sans-serif;
     font-style: normal;
