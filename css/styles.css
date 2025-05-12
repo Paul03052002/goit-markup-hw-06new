@@ -307,7 +307,7 @@ button {
 .menu-list {
     flex-direction: column;
 }
-.menu-list:first-child{
+.stud{
     color: #404BBF;
 }
 .menu-list-second {
