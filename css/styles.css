@@ -122,12 +122,19 @@ button {
     .herobtn {
         display: none;
     }
-
+  .header-flex .links,
+  .header-flex .address {
+      display: flex;
+  }
     .nav {
         display: flex;
         align-items: center;
     }
-
+         .header-flex .address {
+             font-style: normal;
+             flex-direction: column;
+             gap: 12px;
+         }
     .links {
         display: flex;
         align-items: center;
@@ -209,7 +216,15 @@ button {
         align-items: center;
         gap: 40px;
     }
-
+  .header-flex .links,
+  .header-flex .address {
+      display: flex;
+  }
+  .header-flex .address {
+      font-style: normal;
+      flex-direction: column;
+      gap: 12px;
+  }
     .address {
         padding: 24px 0;
         font-size: 16px;
