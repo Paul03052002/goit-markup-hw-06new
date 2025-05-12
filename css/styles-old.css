@@ -124,7 +124,13 @@ body {
 .address:focus {
     color: #404bbf;
 }
+.elec{
+    color: #434455;
+}
 
+.stud{
+    color: #404BBF;
+}
 .mobile-menu {
     position: fixed;
     top: 0;
