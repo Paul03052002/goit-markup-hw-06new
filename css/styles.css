@@ -39,7 +39,6 @@ button {
     margin: -1px;
 }
 
-/* common */
 
 .container {
     max-width: 320px;
@@ -60,7 +59,6 @@ button {
     }
 }
 
-/* header */
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
@@ -246,7 +244,9 @@ button {
     visibility: visible;
     pointer-events: auto;
 }
-
+.mobile-address {
+    display: block;
+}
 .cont-menu {
     position: relative;
     padding-top: 72px;
@@ -917,6 +917,7 @@ img {
        gap: 8px;
 }
 }
+
 @media screen and (min-width: 768px) {
     .foot-cont {
             max-width: 768px;
