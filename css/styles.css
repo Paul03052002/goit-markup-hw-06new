@@ -333,6 +333,9 @@ button {
 .menu-first-link:first-child{
     color: #404BBF;
 }
+.admenu:first-child{
+ color: #4D5AE5;
+}
 .links,
 .header-flex>.address {
     display: none;
@@ -351,11 +354,9 @@ button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: 40px;
     height: 40px;
-    background-color: #434455;
+    background-color: #4D5AE5;
 }
-.men-link:first-child{
-    color: #4D5AE5;
-}
+
 .men-svg {
     fill: var(--cloud);
 }
