@@ -124,13 +124,16 @@ body {
 .address:focus {
     color: #404bbf;
 }
-.elec{
+
+.menu-list .menu-punkt:first-child .menu-first-link {
+    color: #404BBF;
+}
+
+
+.menu-contact .contact-punkt:first-child .address {
     color: #434455;
 }
 
-.stud{
-    color: #404BBF;
-}
 .mobile-menu {
     position: fixed;
     top: 0;
