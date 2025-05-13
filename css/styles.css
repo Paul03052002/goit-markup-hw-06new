@@ -708,7 +708,9 @@ img {
 .section-three {
     max-width: 320px;
     padding: 96px 0;
-    
+}
+.section-three .container {
+        max-width: 264px;
     }
   .the-photos{
     flex-wrap: wrap;
