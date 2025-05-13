@@ -502,9 +502,7 @@ button {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     }
 }
-.section-two{
-padding: 96px 0;
-}
+
 .sec-set-it {
     width: calc((100% - 72px) / 4);
 }
@@ -543,7 +541,10 @@ padding: 96px 0;
 }
 
 @media screen and (min-width: 320px) { 
-    .char{
+  .section-two {
+  padding: 96px 0;
+}
+.char{
         display: flex;
         flex-wrap: wrap;  
         gap: 72px;  
@@ -558,6 +559,9 @@ padding: 96px 0;
 }
 
 @media screen and (min-width: 768px) {
+    .section-two {
+         padding: 96px 0;
+        }
     .char{
         max-width: 736px;
         display: flex;
@@ -703,7 +707,7 @@ img {
     }
   .the-photos{
     flex-wrap: wrap;
-    max-width: 264px;
+    justify-content: center;
   }
 }
 
