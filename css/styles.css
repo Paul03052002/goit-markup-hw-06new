@@ -1,4 +1,9 @@
 
+body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+}
 a {
     text-decoration: none;
 }
@@ -287,6 +292,8 @@ button {
     position: absolute;
     top: 24px;
     right: 24px;
+    border-radius: 50%;
+    border: none;
 }
 
 .nav-menu {
@@ -307,13 +314,8 @@ button {
 .menu-list {
     flex-direction: column;
 }
-.menu-list .menu-punkt:first-child .menu-first-link {
+.stud{
     color: #404BBF;
-}
-
-
-.menu-contact .contact-punkt:first-child .address {
-    color: #434455;
 }
 .menu-list-second {
     display: flex;
@@ -329,7 +331,7 @@ button {
     line-height: 1.12;
     letter-spacing: 0.02em;
     color: #2E2F42;
-    margin-bottom: 0;
+    margin-bottom: 40px;
 }
 
 .menu-first-link {
@@ -367,8 +369,7 @@ button {
 }
 .menu-addr {
     margin-bottom: 48px;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 .menu-contact {
     list-style: none;
@@ -406,6 +407,18 @@ button {
     margin: 0 auto;
 }
 
+ @media (min-width: 320px) and (min-resolution: 2x) or (max-width: 767px) and (min-resolution: 2x) {
+    .grey {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)), url(../images/people-office-mobile2x.jpg);
+            }
+}
+ @media (min-width: 768px) and (min-resolution: 2x) or (max-width: 1157px) and (min-resolution: 2x) {
+     .grey {
+             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/people-office-plansh2x.jpg);
+            }
+}        
 .site-name {
     color: #FFFFFF;
     font-weight: 700;
@@ -449,14 +462,28 @@ button {
 .btn:focus {
     background-color: #404BBF;
 }
+@media screen and (min-width: 320px){
+.grey{
+    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-mobile.jpg);
+}
+.site-name{
+    font-size: 36px;
+    max-width: 216px;
+}
+}
 @media screen and (min-width: 768px) {
     .grey{
         max-width: 768px;
         padding-top: 112px;
         padding-bottom: 112px;
-        margin-bottom: 36px;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-plansh.jpg);
     }
-
+    .site-name{
+        font-size: 56px;
+        max-width: 496px;
+    }
 }
 @media screen and (min-width: 1158px) {
     .grey {
@@ -464,11 +491,11 @@ button {
         padding-top: 180px;
         padding-bottom: 180px;
         margin-bottom: 48px; 
-        
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     }
 }
 .section-two{
-    margin-bottom: 120px;
+padding: 96px 0;
 }
 .sec-set-it {
     width: calc((100% - 72px) / 4);
@@ -494,7 +521,6 @@ button {
 .char {
     display: flex;
     gap: 24px;
-    margin-top: 120px;
 }
 
 .icon {
@@ -508,12 +534,11 @@ button {
     margin-bottom: 8px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px) { 
     .char{
         display: flex;
-        flex-wrap: wrap;
-        max-width: 288px;
-        
+        flex-wrap: wrap;  
+        gap: 72px;  
     }
     .icon{
         display: none;
@@ -534,7 +559,7 @@ button {
         padding: 0;
         margin: 0;
     }
-          .sec-set-it {
+    .sec-set-it {
               width: calc(50% - 12px);
           }
     .icon {
@@ -576,9 +601,7 @@ button {
     } 
 }
 
-.section-three {
-            max-width: 1440px;
-        }
+
     
 .the-photos {
             max-width: 1128px;
@@ -675,6 +698,7 @@ img {
 @media screen and (min-width: 320px) {
 .section-three {
     max-width: 320px;
+    padding: 96px 0;
     
     }
   .the-photos{
@@ -687,12 +711,19 @@ img {
     .section-three{
         max-width: 736px;
         flex-wrap: wrap;
+        padding: 96px 0;       
     }
-    .the-photos{
-    max-width: 768px;
-    gap: 24px;
-    margin-left: 85px;
-    }
+
+.the-photos{
+    display: flex;
+    gap: 64px 24px;
+    flex-wrap: wrap;
+}
+
+
+  .section-three .container {
+      max-width: 584px;
+  }
 }
 @media screen and (min-width: 1158px) {
     .section-three {
@@ -757,9 +788,8 @@ img {
 
 @media screen and (min-width: 320px) {
     .section-four {
-        max-width: 288px;
         flex-wrap: wrap;
-        
+        padding: 96px 0;
     }
     .the-second-photos{   
     flex-wrap: wrap;
@@ -769,7 +799,8 @@ img {
 
 @media screen and (min-width: 768px) {
     .section-four{
-        max-width: 736px;   
+        max-width: 736px; 
+        padding: 96px 0;
     }
     .the-second-photos {
         flex-wrap: wrap;
@@ -796,8 +827,8 @@ img {
 }
 .footer {
     background-color: #2E2F42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     justify-content: flex-start;
 }
 
@@ -828,12 +859,6 @@ img {
 .foot-cont {
     display: flex;
     align-items: baseline;
-
-}
-
-.footer-container {
-    margin-right: 120px;
-
 
 }
 
@@ -940,23 +965,24 @@ img {
 @media screen and (min-width: 320px) {
     .foot-cont{
         max-width: 320px;
-        flex-direction: column;
-        
+        flex-direction: column;       
 }
-    .footer-container{
-        max-width: 288px;
-
-    }
+.foot-pat-two{
+    text-align: center;
+}
+.subsc{
+    text-align: center;
+}
     .foot-media{
-        max-width: 208px;
-        margin: 72px 56px
+     justify-content: center;
     }
+
     .foot-subscribe{
-        margin: auto;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
+        text-align: center;
     }
     .foot-form {
      display: flex;
@@ -964,23 +990,24 @@ img {
       align-items: flex-start;
        gap: 8px;
 }
+.foot-btn{
+    margin-right: auto;
+    margin-left: auto;
+}
 }
 
 @media screen and (min-width: 768px) {
     .foot-cont {
-            max-width: 768px;
+            max-width: 584px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 24px;
+            gap: 72px 24px;
             justify-content:baseline;
-
         }
         .footer-container,
         .foot-media {
-            row-gap: 24px;
-            margin-right: auto;
-            margin-left: auto;                   
+            row-gap: 24px;                  
         }
  
    .foot-media{
@@ -999,7 +1026,10 @@ img {
     .foot-cont{
         max-width: 1440px;
         flex-direction: row;
-    }
+    } 
+    .footer-container{
+      margin-right: 120px;  
+    } 
     .foot-form {
      display: flex;
     flex-direction: row;
