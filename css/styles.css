@@ -124,6 +124,12 @@ button {
     background-color: #404bbf;
     border-radius: 2px;
 }
+@media screen and (min-width: 320px) and (max-width: 767.98px){
+    .page-header{
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}
 @media screen and (min-width: 768px) {
     .herobtn {
         display: none;
@@ -462,16 +468,19 @@ button {
 .btn:focus {
     background-color: #404BBF;
 }
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px) and (max-width: 767.98px){
 .grey{
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
         url(../images/people-office-mobile.jpg);
+    padding-top: 72px;
+    padding-bottom: 72px;    
 }
 .site-name{
     font-size: 36px;
     max-width: 216px;
 }
 }
+
 @media screen and (min-width: 768px) {
     .grey{
         max-width: 768px;
@@ -600,16 +609,9 @@ padding: 96px 0;
     } 
 }
 
-.first-list-photos {
-    margin-left: auto;
-    margin-right: 24px;
-}  
+ 
 .the-photos {
-            max-width: 1128px;
             margin: 0 auto;
-            row-gap: 64px;
-            column-gap: 24px;
-            flex-wrap: wrap;
             gap: 64px 24px;
             display: flex;
             flex-wrap: nowrap;
@@ -723,6 +725,7 @@ img {
   }
   .first-list-photos {
     flex-direction: row;
+    width: calc((100% - 24px) / 2);
   }
 }
 @media screen and (min-width: 1158px) {
