@@ -227,11 +227,7 @@ button {
         margin-right: 76px;
     }
 
-    .contact-list {
-        flex-direction: row;
-        align-items: center;
-        gap: 40px;
-    }
+
   .header-flex .links,
   .header-flex .address {
       display: flex;
@@ -245,13 +241,12 @@ button {
             display: block;
         }
     
-    .header-flex .contact-list {
-            display: flex;
-            gap: 12px;
-            flex-direction: row;
-        }
+     .header-flex .contact-list {
+      display: flex;
+      gap: 40px;
+      flex-direction: row;
+                }
     .address {
-        padding: 24px 0;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -497,8 +492,8 @@ button {
 @media screen and (min-width: 1158px) {
     .grey {
         max-width: 1440px;
-        padding-top: 180px;
-        padding-bottom: 180px; 
+        padding-top: 188px;
+        padding-bottom: 188px; 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     }
 }
@@ -556,6 +551,16 @@ button {
         width: 100%;
         
     }
+    .section-two .table-name{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .section-two .table-subname{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -603,11 +608,11 @@ button {
          .sec-set-it {
              width: auto;
          }
-    .table-name{
+    .section-two .table-name{
         font-weight: 500;
         font-size: 20px;
     }    
-    .table-subname{
+    .section-two .table-subname{
         font-weight: 400;
         font-size: 16px;
     } 
@@ -966,9 +971,7 @@ img {
     border-radius: 4px;
 }
 
-.foot-media {
-    margin-right: 80px;
-}
+
 
 .btn-send {
     margin-left: 16px;
@@ -984,8 +987,11 @@ img {
 .subsc{
     text-align: center;
 }
-    .foot-media{
-     justify-content: center;
+.foot-media {
+            margin: 72px 0;
+}
+    .foot-ul{
+    justify-content: center;
     }
 
     .foot-subscribe{
@@ -1018,13 +1024,13 @@ img {
         }
         .footer-container,
         .foot-media {
-            row-gap: 24px;                  
+            row-gap: 24px; 
         }
  .footer-container{
     flex-direction: row;
  }
    .foot-media{
-    max-width: 208px;
+    max-width: 208px;  
    }
     .foot-form{
    flex-direction: row;
@@ -1032,7 +1038,12 @@ img {
    .foot-lab{
     margin-right: 24px;
    }
-
+.subsc {
+    text-align:left;
+}
+.foot-pat-two {
+    text-align: left;
+}
 }
 
 @media screen and (min-width: 1158px) {
@@ -1041,13 +1052,16 @@ img {
         flex-direction: row;
     } 
     .footer-container{
-      margin-right: 120px;  
+      margin-left: 120px;  
     } 
     .foot-form {
      display: flex;
     flex-direction: row;
      align-items: flex-start;
      gap: 8px;
+}
+.foot-media{
+margin-right: 80px;
 }
 }
 
