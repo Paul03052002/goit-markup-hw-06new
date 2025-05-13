@@ -408,18 +408,8 @@ button {
     margin: 0 auto;
 }
 
- @media (min-width: 320px) and (min-resolution: 2x) or (max-width: 767px) and (min-resolution: 2x) {
-    .grey {
-                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-         rgba(46, 47, 66, 0.7)), url(../images/people-office-mobile2x.jpg);
-            }
-}
- @media (min-width: 768px) and (min-resolution: 2x) or (max-width: 1157px) and (min-resolution: 2x) {
-     .grey {
-             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(../images/people-office-plansh2x.jpg);
-            }
-}        
+  
+      
 .site-name {
     color: #FFFFFF;
     font-weight: 700;
@@ -470,6 +460,13 @@ button {
     padding-top: 72px;
     padding-bottom: 72px;    
 }
+@media (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .grey {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+         rgba(46, 47, 66, 0.7)), url(../images/people-office-mobile2x.jpg);
+            }
+}
 .site-name{
     font-size: 36px;
     max-width: 216px;
@@ -488,6 +485,13 @@ button {
         font-size: 56px;
         max-width: 496px;
     }
+    @media (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+     .grey {
+             background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/people-office-plansh2x.jpg);
+            }
+} 
 }
 @media screen and (min-width: 1158px) {
     .grey {
@@ -496,6 +500,7 @@ button {
         padding-bottom: 188px; 
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     }
+   
 }
 
 .sec-set-it {
@@ -549,7 +554,7 @@ button {
     }
     .sec-set-it{
         width: 100%;
-        
+        text-align: center;
     }
     .section-two .table-name{
         font-weight: 700;
@@ -617,7 +622,9 @@ button {
         font-size: 16px;
     } 
 }
-
+.section-three {
+    background-color: #F4F4FD;
+}
  
 .the-photos {
             margin: 0 auto;
@@ -710,7 +717,7 @@ img {
     padding: 96px 0;
 }
 .section-three .container {
-        max-width: 264px;
+        max-width: 296px;
     }
   .the-photos{
     flex-wrap: wrap;
@@ -811,8 +818,9 @@ img {
     }
     .the-second-photos{   
     flex-wrap: wrap;
-        flex-direction: column;
+    flex-direction: column;
     }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -827,7 +835,7 @@ img {
         flex-direction: row;
     }
  .project-card {
-     width: calc((100% - 48px) / 2);
+     width: calc((100% - 24px) / 2);
      
 }
 }
@@ -981,7 +989,8 @@ img {
 @media screen and (min-width: 320px) {
     .foot-cont{
         max-width: 320px;
-        flex-direction: column;       
+        flex-direction: column;  
+        align-items: center;     
 }
 .foot-pat-two{
     text-align: center;
@@ -990,7 +999,7 @@ img {
     text-align: center;
 }
 .foot-media {
-            margin: 72px 0;
+  margin: 72px 0;
 }
     .foot-ul{
     justify-content: center;
@@ -1013,6 +1022,9 @@ img {
     margin-right: auto;
     margin-left: auto;
 }
+.footer-container{
+    text-align: center;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -1022,7 +1034,8 @@ img {
             flex-direction: row;
             flex-wrap: wrap;
             gap: 72px 24px;
-            justify-content:baseline;
+           align-items: flex-start;
+            
         }
         .footer-container,
         .foot-media {
@@ -1030,9 +1043,11 @@ img {
         }
  .footer-container{
     flex-direction: row;
+    text-align: left;
  }
    .foot-media{
-    max-width: 208px;  
+    max-width: 208px; 
+    margin: 0; 
    }
     .foot-form{
    flex-direction: row;
@@ -1052,16 +1067,18 @@ img {
     .foot-cont{
         max-width: 1440px;
         flex-direction: row;
+        flex-wrap: nowrap;
     } 
-    .footer-container{
-      margin-left: 120px;  
-    } 
+.footer-container {
+    margin-right: 120px;
+}
     .foot-form {
      display: flex;
     flex-direction: row;
      align-items: flex-start;
-     gap: 8px;
+     gap: 8px;  
 }
+
 .foot-media{
 margin-right: 80px;
 }
