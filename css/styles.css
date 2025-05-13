@@ -588,6 +588,7 @@ button {
     }
     .sec-set-it {
               width: calc(50% - 12px);
+              text-align: left;
           }
     .icon {
         display: none;
